@@ -19,4 +19,18 @@ class CalculatorTest {
     }
 
 
+    @Test
+    void greeting() {
+        Calculator cal = new Calculator();
+
+
+        String expected = "Hi Oleg";
+        String real = cal.Greeting(" Oleg");
+
+        System.out.println("Expect " + expected);
+        System.out.println("Real " + real);
+        System.out.println("Action has been started...");
+
+        assertEquals(expected,real);
+    }
 }
